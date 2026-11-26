@@ -1,0 +1,20 @@
+RAN Concheck Analyzer V3.7.4 – BUILD VALIDATION
+
+Static validation:
+- Python compile check: PASS (app.py)
+- Existing unit tests: PASS (6/6)
+- SCAN SITE regression check: PASS (Dump Config remains deferred)
+- Search-only Dump Config viewer regression check: PASS
+- RAN Report independent multi-database detection retained from V3.7.3.
+- NDB independent multi-database detection added in V3.7.4.
+
+NDB behavior:
+- All supported NDB workbooks in the selected Area are listed and searched independently.
+- Site and eNodeB selectors are populated from all readable NDB workbooks in that Area.
+- Audit chooses the matching NDB source with the largest matching row count; newest snapshot wins ties.
+- All matching NDB sources are displayed in the audit.
+- No NDB or RAN source workbooks are merged or modified.
+
+Limitations:
+- Python compile and existing unit tests passed; the Streamlit interactive UI was not launched in this build environment.
+- End-to-end behavior must still be verified on the user's Windows PC with their complete NDB folder structure.

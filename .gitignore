@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.env
+database/*.db
+database_Concheck/
+output_Concheck/
+logs/
+*.pyc
